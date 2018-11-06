@@ -1,0 +1,120 @@
+@charset "utf-8";
+/*reset start*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,input,textarea,button,p,blockquote,th,td,hr,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
+    margin:0;
+    padding:0;}
+h1,h2,h3,h4,h5,h6{
+    font-size:16px;
+    font-weight:700;}
+address,caption,cite,code,dfn,em,th,var{
+    font-style:normal;
+    font-weight:400;}
+ol,ul{
+    list-style:none;}
+a, a:hover{
+    text-decoration:none;}
+fieldset{
+    border: 1px #ddd solid;}
+img{
+    vertical-align:middle;
+    border:0;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
+    display:block;}
+audio,canvas,video{
+    display:inline-block;
+    *display:inline;
+    *zoom:1;}
+button,input,select,textarea{
+    font-size:12px}
+button,input[type="button"],input[type="reset"],input[type="submit"]{
+    cursor:pointer;
+    -webkit-appearance:button;}
+q:before,q:after{
+    content:'';}
+ins{
+    text-decoration:none;}
+del{
+    text-decoration:line-through;}
+mark{
+    background:#ff0;}
+sub,sup{
+    position:relative;
+    font-size:10px;
+    line-height:0;
+    vertical-align:baseline;}
+sup{
+    top:-0.5em;}
+sub{
+    bottom:-0.25em;}
+table{
+    border-collapse:collapse;
+    border-spacing:0;}
+th{
+    text-align:inherit;}
+iframe{
+    display:block;}
+body{
+    -webkit-text-size-adjust:100%;
+    -ms-text-size-adjust:100%;
+    word-wrap:break-word;
+    word-break:break-all;
+    font:12px/1.5 "microsoft yahei","\5FAE\8F6F\96C5\9ED1",Arial;
+    color:#333;
+    background:#fff;}
+/*reset end*/
+
+/*public start*/
+.tr{text-align:right;}
+.tc{text-align:center;}
+.tl{text-align:left;}
+.bc{margin-left:auto; margin-right:auto;}
+.fl{_display:inline; float:left;}
+.fr{_display:inline; float:right;}
+.cb{clear:both;}
+/*
+.c{display:block; zoom:1;}
+.c:after{content:"."; display:block; visibility:hidden; height:0; clear:both;}
+*/
+.c{*zoom:1}
+.c:before,.c:after{display:table; content:"";}
+.c:after{clear:both;}
+/*
+箭头
+.icon{
+        width:0;
+        height:0;
+        font-size:0;
+        border-left:4px dashed transparent;
+        border-right:4px dashed transparent;
+        border-top:4px solid #14a4da;}
+*/
+
+/*
+焦点虚线
+<a href=”#” hidefocus=”true” >链接</a>
+a:focus{-moz-outline-style:none; outline:none;}
+
+透明度：
+filter:Alpha(opacity=70);
+opacity:0.7;
+
+两端对齐：
+text-align:justify;
+text-justify:inter-ideograph;
+
+灰度滤镜
+filter: grayscale(100%);
+-webkit-filter: grayscale(100%);
+-moz-filter: grayscale(100%);
+-ms-filter: grayscale(100%);
+-o-filter: grayscale(100%);
+filter: Gray();
+*/
+.mt15{
+    margin-top:15px;}
+.btn-link{
+    padding:0 10px;
+    line-height:24px;
+    text-decoration:underline;}
+a.btn-link:hover{
+    text-decoration:underline;}
