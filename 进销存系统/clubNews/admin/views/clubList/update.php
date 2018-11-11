@@ -10,12 +10,11 @@
         <div class="box-detail-bd">
             <div style="display:block;" class="box-detail-tab-item">
                 <table>
-                    <tr class="table-title">
-                        <td colspan="2">申请信息</td>
+                	<tr class="table-title">
+                    	<td colspan="2">申请信息</td>
                     </tr>
-                    <tr>
-                        <td><?php echo $form->labelEx($model, 'order_title'); ?></td>
-                        <td width="30%"><?php echo $form->labelEx($model, 'club_code'); ?></td>
+                	<tr>
+                    	<td width="30%"><?php echo $form->labelEx($model, 'club_code'); ?></td>
                        <td width="30%">
                             <?php echo $form->textField($model, 'club_code', array('class' => 'input-text')); ?>
                             <?php echo $form->error($model, 'club_code', $htmlOptions = array()); ?>
@@ -41,26 +40,26 @@
                 </table>
                 <div class="mt15">
                 <table style='margin-top:5px;'>
-                    <tr class="table-title">
-                        <td colspan="2">联系人信息</td>
+                	<tr class="table-title">
+                    	<td colspan="2">联系人信息</td>
                     </tr>
                     <tr>
-                        <td  width="15%"><?php echo $form->labelEx($model, 'apply_name'); ?></td>
-                        <td width="85%">
+                    	<td  width="15%"><?php echo $form->labelEx($model, 'apply_name'); ?></td>
+                    	<td width="85%">
                             <?php echo $form->textField($model, 'apply_name', array('class' => 'input-text')); ?>
                             <?php echo $form->error($model, 'apply_name', $htmlOptions = array()); ?>
                         </td>
                     </tr>
                     <tr>
                         <td><?php echo $form->labelEx($model, 'contact_phone'); ?></td>
-                        <td>
+                    	<td>
                             <?php echo $form->textField($model, 'contact_phone', array('class' => 'input-text')); ?>
                             <?php echo $form->error($model, 'contact_phone', $htmlOptions = array()); ?>
                         </td>
                     </tr>
                     <tr>
-                        <td><?php echo $form->labelEx($model, 'email'); ?></td>
-                        <td>
+                    	<td><?php echo $form->labelEx($model, 'email'); ?></td>
+                    	<td>
                             <?php echo $form->textField($model, 'email', array('class' => 'input-text')); ?>
                             <?php echo $form->error($model, 'email', $htmlOptions = array()); ?>
                         </td>

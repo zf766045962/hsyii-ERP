@@ -1,0 +1,41 @@
+﻿@charset "utf-8";
+
+/* 页面整体定义 */
+
+body {margin:0px; background-color:#999}
+td{ font-size:14px; color:#a0a0a0}
+
+
+
+
+/* 通用链接样式 */
+a:link{ font-size:14px; text-decoration:none; line-height:18px; color:#545454; } 
+a:visited { font-size:14px; text-decoration:none; line-height:18px;  color:#545454; } 
+a:hover { font-size:14px; text-decoration:underline; line-height:18px;  color:#545454; } 
+a:active { font-size:14px;	text-decoration:none;  line-height:18px; color:#545454; }
+
+
+
+
+
+/* 背景图片*/
+.bg{height:121px; width:150px; background-image:url(bg.jpg);}
+
+
+/* 头部样式(Header) */
+.Top { height:25px; width:1000px; background:url(top.jpg); background-repeat:no-repeat;}
+.BannerBg { height:387px; width:1000px; background:url(face.jpg)}
+
+
+/*主导航样式*/
+.NavBlank { height:38px; width:160px;}
+.Nav1 { height:38px; width:1000px; background:url(nav1.jpg);}
+.Nav2 { height:38px; width:1000px; background:url(nav2.jpg);}  
+.Nav3  { height:78px; width:1000px; background:url(nav3.jpg);} 
+a.Nav:link{ text-align:center; font-size:14px; font-weight:bold; text-decoration:none; color:#616060;} 
+a.Nav:visited { text-align:center; font-size:14px;  font-weight:bold; text-decoration:none; color:#616060;} 
+a.Nav:hover { text-align:center; font-size:14px;  font-weight:bold; text-decoration:underline; color:#616060;} 
+a.Nav:active {text-align:center; font-size:14px;  font-weight:bold; text-decoration:none; color:#616060;}
+
+/* 底部样式(Footer) */
+.Footer {line-height: 10pt; background-color:#FFFFFF; font-family:Arial;}

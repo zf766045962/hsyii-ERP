@@ -1,0 +1,63 @@
+@charset "utf-8";
+/* CSS Document */
+.uploadfile{
+	width:0;
+	}
+.filelist li{
+	list-style-type:none;
+	margin-top:0px;
+	}
+.filelist{
+	padding:0;
+	}
+.uploadfilebtn{
+	display:inline-block;
+	border:1px solid #999;
+	line-height:24px;
+	border-radius:2px;
+	padding:0 18px;
+    font-size:12px;
+	color:#666;
+	cursor:pointer;
+	background:url(images/btnbg.png) repeat-x 0 0;
+	text-decoration:none;
+	}
+.delfilebtn{
+	font-size:12px;
+	color:#666;
+	margin-left:5px;
+	}
+.filename{
+	font-size:12px;
+	color:#FF0000;
+	margin:5px;
+}
+.progressnum{
+	font-size:12px;
+	color:#0066FF;
+	margin:5px;
+}
+.progress{
+	 /*display:inline-block; */
+	 width:99%; 
+	 height:5px; 
+	 background-color:white;
+	 border-radius:10px;
+	 border:1px groove #666;
+	 vertical-align:middle;
+	 padding:0 0px;
+	 }
+.progressbar{
+	width:0;
+	height:5px;
+	border-radius:5px;
+	background:url(../images/progress.png) repeat-x center; 
+	}
+.progress_item td{
+	height:16px;
+}
+.progress_item td img{
+	/*margin-top:2px;*/
+	height:16px;
+	width:16px;
+}

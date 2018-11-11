@@ -6,27 +6,13 @@ $st="";
 
     $params['roleItem'] = array(
     array(
-     '采购管理',
+     '服務機構',
         array(
-             'award_index0' => array('采购订单', 'tradeOrder/index'),
-             'award_index2' => array('采购退货','ClubList/index'),
+            'award_index41' => array('服務機構名稱', 'clubList/index'),
+             'award_index42' => array('服務機構名稱', 'clubList/index'),
             ),
        ),
-    array(
-     '销售管理',
-        array(
-             'award_index0' => array('销售订单', 'tradeOrder/index'),
-             'award_index2' => array('销售退货','ClubList/index'),
-            ),
-       ),
-    array(
-     '库存管理',
-        array(
-             'award_index0' => array('采购收货入库登记', 'tradeOrder/index'),
-             'award_index1' => array('销售开单出库登记', 'tradeDetail/index'),
-             'award_index2' => array('退货登记','ClubList/index'),
-            ),
-       ),
+   
   );
 
 

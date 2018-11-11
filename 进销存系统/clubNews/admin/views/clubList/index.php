@@ -1,6 +1,6 @@
 <div class="box">
       <div class="box-content">
-        <div class="box-header">
+    	<div class="box-header">
             <a class="btn" href="<?php echo $this->createUrl('create');?>"><i class="fa fa-plus"></i>添加单位</a>
             <a class="btn" href="javascript:;" onclick="we.reload();"><i class="fa fa-refresh"></i>刷新</a>
             <a style="display:none;" id="j-delete" class="btn" href="javascript:;" onclick="we.dele(we.checkval('.check-item input:checked'), deleteUrl);"><i class="fa fa-trash-o"></i>删除</a>
@@ -29,8 +29,8 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <?php foreach($arclist as $v){ ?>
-                    <tr>    
+                  	<?php foreach($arclist as $v){ ?>
+                    <tr> 	
                         <td class="check check-item"><input class="input-check" type="checkbox" value="<?php echo CHtml::encode($v->id); ?>"></td>           
                         <td><?php echo CHtml::link($v->club_code, array('update', 'id'=>$v->id)); ?></td>
                       <td><?php echo CHtml::link($v->club_name, array('update', 'id'=>$v->id)); ?></td>
@@ -42,7 +42,7 @@
                             <a class="btn" href="javascript:;" onclick="we.dele('<?php echo $v->id;?>', deleteUrl);" title="删除"><i class="fa fa-trash-o"></i></a>
                         </td>
                     </tr>
-                    <?php } ?>
+					<?php } ?>
                 </tbody>
             </table>
         </div><!--box-table end-->
