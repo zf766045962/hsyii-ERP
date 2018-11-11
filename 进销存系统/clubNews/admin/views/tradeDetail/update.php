@@ -11,7 +11,7 @@
             <div style="display:block;" class="box-detail-tab-item">
                 <table>
                     <tr class="table-title">
-                        <td colspan="2">申请信息</td>
+                        <td colspan="4">申请信息</td>
                     </tr>
                     <tr>
                         <td width="30%"><?php echo $form->labelEx($model, 'material_code'); ?></td>
@@ -19,8 +19,6 @@
                             <?php echo $form->textField($model, 'material_code', array('class' => 'input-text')); ?>
                             <?php echo $form->error($model, 'material_code', $htmlOptions = array()); ?>
                         </td>
-                    </tr>
-                    <tr>
                          <td><?php echo $form->labelEx($model, 'material_name'); ?></td>
                         <td>
                             <?php echo $form->textField($model, 'material_name', array('class' => 'input-text')); ?>
@@ -33,8 +31,6 @@
                             <?php echo $form->textField($model, 'material_quantity', array('class' => 'input-text')); ?>
                             <?php echo $form->error($model, 'material_quantity', $htmlOptions = array()); ?>
                         </td>
-                    </tr>
-                    <tr>
                         <td><?php echo $form->labelEx($model, 'unit');?></td>
                         <td><?php echo $form->textField($model, 'unit', array('class' => 'input-text')); ?>
                             <?php echo $form->error($model, 'unit', $htmlOptions = array()); ?>
@@ -45,16 +41,19 @@
                         <td><?php echo $form->textField($model, 'unitprice', array('class' => 'input-text')); ?>
                             <?php echo $form->error($model, 'unitprice', $htmlOptions = array()); ?>
                         </td>
-                    </tr>
-                    <tr>
                         <td><?php echo $form->labelEx($model, 'total');?></td>
                         <td><?php echo $form->textField($model, 'total', array('class' => 'input-text')); ?>
                             <?php echo $form->error($model, 'total', $htmlOptions = array()); ?>
                         </td>
                     </tr>
                     <tr>
+                        <td><?php echo $form->labelEx($model, 'warehouse_id');?>;</td>
+                        <td colspan="3"><?php echo $form->dropDownList($model, 'remarks', Chtml::listData(tradeOrder::model()->findAll(), 'id', 'auditor')
+                            , array('prompt'=>'请选择','onchange' =>'selectOnchang(this)'));?>
+                        </td>
+                    <tr>
                         <td><?php echo $form->labelEx($model, 'remarks'); ?></td>
-                        <td>
+                        <td colspan="3">
                             <?php echo $form->textArea($model,'remarks', array('class' => 'input-text', 'maxlength'=>'30' )); ?>
                         </td>
                     </tr>

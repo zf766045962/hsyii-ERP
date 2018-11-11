@@ -1,0 +1,7 @@
+/* banner */
+.banenr{ width:100%; overflow:hidden;position:relative;}
+.banenr img{ width:100%;}
+.banenr ul li{width: 100%; position: relative;}
+.banenr>ol{height:20px;position: relative;z-index:10;width:30%; left:30%; bottom:10px; margin-top:-19px;text-align:right;padding-right:20px;}
+.banenr>ol>li{display:inline-block;margin:5px;width:11px;height:11px; background-color: #fff; border: 1px solid #fff; border-radius: 50%;}
+.banenr>ol>li.on{ width: 11px; height: 11px; background-color: #56abe4; border: 1px solid #d1eab4;}

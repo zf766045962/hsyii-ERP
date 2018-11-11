@@ -1,0 +1,313 @@
+charset "utf-8";
+/* CSS Document */
+body {margin:0; padding:0;}
+ul,li {list-style:none; margin:0; padding:0;}
+.clear {clear:both;}
+
+*{margin:0;padding:0;box-sizing: border-box;}
+
+#world{background-image: url(../images/admin/center/member_a20_r3_c1.png);}
+#index{background-image: none!important;}
+
+/*閼挎粌宕�*/
+.wold_bg {width:100%; background:#0b496e;}
+.wold_bg1 {width: 100%; background: url(../images/myworld/images/wold_bg2.png) no-repeat; padding-top: 50px;}
+.wold_bg2 img {display:block;}
+.wold_header {width:1230px; margin:0 auto;}
+.wold_header .header_pic {width:180px; float:left;}
+.wold_header .header_pic img { -moz-border-radius: 5px;-webkit-border-radius: 5px;-o-border-radius: 5px;-ms-border-radius: 5px;border-radius:5px; border:solid 4px #efefef;}
+.wold_header .wold_header_r {width:1030px; float:left; margin-left:20px;}
+.wold_header .wold_header_r .nick_motto {width:1030px; margin-top:50px;} 
+.wold_header .wold_header_r .nick_motto .nickname {width:250px; float:left; font-family:"閺傝顒滈崗棰佹兜缁绮GBK"; font-size:20px; line-height:25px; color:#FFFFFF;}
+.wold_header .wold_header_r .nick_motto .motto {width:370px; float:right; font-family:"閺傝顒滈崗棰佹兜姒涙叡GBK"; font-size:20px; line-height:25px; color:#FFFFFF;}
+.wold_menu {width:970px; height:60px; background:url(../images/myworld/images/wold_menu_bg.png) no-repeat; padding-left:60px;box-sizing: content-box;}
+.wold_menu a {text-decoration:none; display:block; height:56px; width:110px; font-family:"閺傝顒滈崗棰佹兜姒涙叡GBK"; font-size:16px; line-height:56px; color:#FFFFFF; text-align:center; float:left;box-sizing: content-box;}
+.wold_menu span {font-family:"閺傝顒滈崗棰佹兜姒涙叡GBK"; font-size:16px; line-height:56px; color:#FFFFFF; text-align:center; float:left;}
+.wold_menu a:active {border-bottom:solid 4px #ff5a00;}
+.thisclass {border-bottom:solid 4px #ff5a00;}
+
+/*閸斻劍锟斤拷*/
+.wold_content {width:1230px; margin:0 auto; margin-top:25px;}
+.wold_content_l {width:760px; float:left; margin-right:10px;}
+.wold_content_r {width:458px; float:left;}
+.wold_content_l .content_l_show {padding:14px; border:solid 1px #dddddd; background:#FFFFFF; margin-bottom:10px;}
+.content_head a {text-decoration:none; color:#000000; font-family:"閺傝顒滈崗棰佹兜姒涙叡GBK"; font-size:16px;}
+.content_head img { -moz-border-radius: 50%;-webkit-border-radius: 50%;-o-border-radius: 50%;-ms-border-radius: 50%;border-radius:50%; border:solid 1px #dddddd; float:left; margin-right:10px;cursor: pointer;}
+.content_head p {float:left;}
+.content_head p:hover {text-decoration: underline;cursor: pointer;}
+.show_content { margin-left:60px;}
+.show_content_img img {float:left; margin-left:8px;}
+.content_bottom {margin-left:70px; margin-top:20px;position:relative;}
+.content_bottom img {float:left;}
+.content_bottom p {float:left; font-family:"閺傝顒滈崗棰佹兜姒涙叡GBK"; font-size:10px; color:#9d9c9c; margin:0; margin-right:10px; margin-left:2px; line-height:22px;}
+/* .content_bottom a { text-decoration:none; color:014ad1; font-family:"閺傝顒滈崗棰佹兜姒涙叡GBK"; font-size:10px; float:left; line-height:22px; color:#014ad1;}
+.content_bottom a:visited {color:#014ad1;} */
+.more{display: inline-block;width: 80px;float: right;text-align: left;text-indent: 0.7em;position: absolute;right: 0;top: -7px;height: 40px;line-height: 40px;margin-top: -2px;background: url(../images/myworld/images/wold_pub_select.png)90% no-repeat;}  
+.more:hover{border-left: 1px solid #ccc;border-top: 1px solid #ccc;border-right: 1px solid #ccc;}
+.more ul{display:none;margin-left: -1px;border-bottom: 1px solid #ccc;}
+.more:hover ul{display: block;background: #fff;}
+.more ul li{float: none;width: 80px;margin-top: -1px;border-left: 1px solid #ccc;border-right: 1px solid #ccc;margin-top: -1px;}
+.more ul li:hover{background: #F2F6F7;}
+#wold_ico1 {width:22px; height:20px; border:none; background:url(../images/myworld/images/wold_message.png) no-repeat; float:left; outline:none; cursor: pointer;}
+#wold_ico2 {width:19px; height:22px; border:none; background:url(../images/myworld/images/wold_support.png) no-repeat; float:left; outline:none; cursor: pointer;}
+#wold_ico3 {width:22px; height:24px; border:none; background:url(../images/myworld/images/wold_oppose.png) no-repeat; float:left; outline:none; cursor: pointer;}
+
+.body_bg{display: none;position: fixed;top: 0;left: 0;z-index: 100; width: 100%;height: 100%;}
+.sele_friend{width:800px;position: absolute;left:50%;top:200px;margin-left:-400px; border:5px solid #dedede;background:#fefefe;}
+.sele_header{width:99%; height:50px;line-height:50px; text-align:center; border-bottom:2px solid #dedede; position: relative;}
+.sele_header a{width:20px; position: absolute;right: 15px;top: 50%;margin-top: -10px;}
+.sele_box{padding:20px 25px;}
+.sele_left{width:28%;}
+.sele_group_tit{width:100%;height:35px;line-height:35px;background:#dedede;text-indent:0.4em;}
+.new_group{width:100%;height:45px;line-height:45px;text-indent:0.7em;color:#fc811f;border:1px solid #dedede;}
+.group_list{width:100%;height:400px;padding:15px 0.7em;border:1px solid #dedede;position: relative;}
+.group{margin-bottom: 15px;}
+.group img{vertical-align: sub;margin-right: 8px;}
+.sele_right{float:right;width:70%;}
+.check_tit{width:100%;height:35px;line-height:35px;background:#dedede;text-indent:0.4em;}
+.seek{width: 100%;height: 45px;line-height: 45px;display: flex;align-items: center;justify-content: center;border:1px solid #dedede;}
+.seek_box{width: 97%;height: 30px;border-radius: 5px;border: 1px solid #ccc;}
+.seek .seek_input {border: none;background: none;width: 90%;height: 100%;text-indent: 1em;float: left;}
+.seek_submit { width: 10%;height: 100%;line-height: 35px;float: left;cursor: pointer;display: flex;align-items: center;justify-content: center;}
+.seek_submit img {width: 18px;}
+.friend_list{width:100%;height:400px;padding: 8px 10px 0 10px;border:1px solid #dedede;overflow-x: hidden;overflow-y: scroll;}
+.friend_list::-webkit-scrollbar {width: 6px;height: 6px;background-color: #DBDBDB;}
+.friend_list::-webkit-scrollbar-thumb { -moz-border-radius: 10px;-webkit-border-radius: 10px;-o-border-radius: 10px;-ms-border-radius: 10px;border-radius: 10px;-moz-box-shadow: inset 0 0 6px rgba(0,0,0,0);-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0);-o-box-shadow: inset 0 0 6px rgba(0,0,0,0);-ms-box-shadow: inset 0 0 6px rgba(0,0,0,0);box-shadow: inset 0 0 6px rgba(0,0,0,0);background-color: #727272;}
+.friend_list::-webkit-scrollbar-track {-moz-box-shadow: inset 0 0 6px rgba(0,0,0,0);-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0);-o-box-shadow: inset 0 0 6px rgba(0,0,0,0);-ms-box-shadow: inset 0 0 6px rgba(0,0,0,0);box-shadow: inset 0 0 6px rgba(0,0,0,0);-moz-border-radius: 10px;-webkit-border-radius: 10px;-o-border-radius: 10px;-ms-border-radius: 10px;border-radius: 10px;background-color: #DBDBDB;}
+.list_tab{width:100%;display: inline-block;}
+.list_tab tbody{width:100%;display: inline-block;}
+.list_tab tr{width:100%;display: inline-block;}
+.list_tab tr td{width:33.3333333%;height: 85px;padding-bottom: 5px;display: inline-block;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.list_tab tr a{display: inline-block;width:60px;height:60px;}
+.list_tab tr img{width:100%;height:100%;border-radius: 8px;vertical-align: middle;}
+.list_tab tr span{margin-left:5px;}
+.checked{border: 3px solid #ff7500;}
+.sele_aff1,.sele_aff2{width:100%;text-align:center;padding: 30px 0;display:none;}
+.sele_aff1 input,.sele_aff2 input{width: 130px;height:35px;border-radius: 5px;background: #ff9326;color: #8b5110;border: 1px solid #8b5110;}
+.new_group_box{border-bottom:1px solid #dedede;position: absolute;top: 0;left: 0;width: 100%;text-align: center;padding: 10px;background: #fefefe; display:none;}
+.new_group_box .new_tet{width:100%;}
+.new_group_box .new_tet input{width:100%;height:30px;text-indent: 0.7em;}
+.new_group_box .new_btn{width:100%; margin-top:10px;}
+.new_group_box .new_btn input{width:100%;height:30px;text-algin:center;background: #ff9326;color: #8b5110;border: 1px solid #dedede;}
+
+.show_content_text {margin:10px; font-family:"閺傝顒滈崗棰佹兜姒涙叡GBK"; font-size:14px; word-wrap: break-word;}
+.wold_angle img { display:block; width:100%; margin:0; padding:0;}
+.wold_message { margin:0; width: 100%; border-left:solid 1px #cccccc; border-right:solid 1px #cccccc; padding-bottom:10px; padding-top:10px;}
+.wold_m1 { margin:0; padding-left:60px; width: 100%;}
+.wold_m2 {padding-left:60px; width: 100%; border-top:dashed 1px #cccccc; margin-top:10px; padding-top:10px;}
+.wold_mm1{width:100%;}
+.wold_s {margin-top:10px;}
+.wold_o {margin-top:10px;}
+#wold_ico4 {width: 22px; float:left; margin-right:20px; outline:none;}
+#wold_ico5 {width:22px; float:left; margin-right:20px; outline:none;}
+.wold_s_hp img { width: 37px; height: 37px; -moz-border-radius: 50%;-webkit-border-radius: 50%;-o-border-radius: 50%;-ms-border-radius: 50%;border-radius:50%; border:solid 1px #cccccc; float:left; margin-right:10px;}
+.wold_o_hp img { width: 37px; height: 37px; -moz-border-radius: 50%;-webkit-border-radius: 50%;-o-border-radius: 50%;-ms-border-radius: 50%;border-radius:50%; border:solid 1px #cccccc; float:left; margin-right:10px;}
+#wold_s_count {width:200px; float:left; margin-left:10px; font-family:"閺傝顒滈崗棰佹兜姒涙叡GBK"; font-size:14px;}
+#wold_s_count span {color:#ff5c26;}
+.wold_mm1 .wold_mm1_pic1 {float:left;}
+.wold_mm1 .wold_mm1_pic1 img { -moz-border-radius: 50%;-webkit-border-radius: 50%;-o-border-radius: 50%;-ms-border-radius: 50%;border-radius:50%; border:solid 1px #cccccc;}
+.wold_mm1 .wold_mm1_text1 {float:left; margin-left:10px;width: 90%;}
+.wold_mm1 .wold_mm1_text1 .wold_mt p { font-family:"閺傝顒滈崗棰佹兜姒涙叡GBK"; font-size:14px; color:#7e7e7e; float:left; margin:0; line-height:20px;}
+#mt {margin-right:15px;}
+ .wold_mm1_text1 p {width: 100%; word-wrap: break-word;font-family:"閺傝顒滈崗棰佹兜姒涙叡GBK"; font-size:14px; margin:0; margin-bottom:5px;}
+ .wold_mm1_text1 p span {color:#ff5c26;}
+ 
+ .wold_mmm1 {margin-left:50px; margin-top:10px;}
+.wold_mmm1 .wold_mm1_pic1 {float:left;}
+.wold_mmm1 .wold_mm1_pic1 img { -moz-border-radius: 50%;-webkit-border-radius: 50%;-o-border-radius: 50%;-ms-border-radius: 50%;border-radius:50%; border:solid 1px #cccccc;}
+.wold_mmm1 .wold_mm1_text1 {float:left; margin-left:10px;}
+.wold_mmm1 .wold_mm1_text1 .wold_mt p {font-family:"閺傝顒滈崗棰佹兜姒涙叡GBK"; font-size:14px; color:#7e7e7e; float:left; margin:0; line-height:20px;}
+.wold_mmm2 {margin-top:10px; margin-left:50px; display:none;}
+.wold_mmm2 textarea {margin:0; padding:0; float:left; font-family:"閺傝顒滈崗棰佹兜姒涙叡GBK"; font-size:14px; overflow:hidden; resize:none; outline:none;}
+.wold_mmm2 input {margin:0; padding:0; float:left;}
+.wold_mmm2 #mm2_content { display:block; width:460px; height:50px; border:solid 1px #ff9326; border-right:none; margin:0;}
+.wold_mmm2 #mm2_face {display:block; width:60px; height:50px; border:none; border-top:solid 1px #ff9326; border-bottom:solid 1px #ff9326; background:url(../images/myworld/images/mm2_face.png) no-repeat; margin:0;}
+.wold_mmm2 #mm2_pub { display:block; width:70px; height:50px; border:solid 1px #ff9326; margin:0; font-family:"閺傝顒滈崗棰佹兜姒涙叡GBK"; font-size:14px; text-align:center; line-height:50px; background:#FFFFFF;}
+
+#mm3_pub { display:block; width:70px; height:50px; border:solid 1px #ff9326; margin:0; font-family:"閺傝顒滈崗棰佹兜姒涙叡GBK"; font-size:14px; text-align:center; line-height:50px; background:#FFFFFF;}
+
+.wold_mmm3 {margin-top:10px; display:none;}
+.wold_mmm3 textarea {margin:0; padding:0; float:left; font-family:"閺傝顒滈崗棰佹兜姒涙叡GBK"; font-size:14px; overflow:hidden; resize:none; outline:none;}
+.wold_mmm3 input {margin:0; padding:0; float:left;}
+.wold_mmm3 #mm2_content { display:block; width:510px; height:50px; border:solid 1px #ff9326; border-right:none; margin:0;}
+.wold_mmm3 #mm2_face {display:block; width:60px; height:50px; border:none; border-top:solid 1px #ff9326; border-bottom:solid 1px #ff9326; background:url(../images/myworld/images/mm2_face.png) no-repeat; margin:0;}
+.wold_mmm3 #mm2_pub { display:block; width:70px; height:50px; border:solid 1px #ff9326; margin:0; font-family:"閺傝顒滈崗棰佹兜姒涙叡GBK"; font-size:14px; text-align:center; line-height:50px; background:#FFFFFF;}
+
+#mmm2_pub { display:block; width:70px; height:50px; border:solid 1px #ff9326; margin:0; font-family:"閺傝顒滈崗棰佹兜姒涙叡GBK"; font-size:14px; text-align:center; line-height:50px; background:#FFFFFF;}
+#mmmm2_pub { display:block; width:70px; height:50px; border:solid 1px #ff9326; margin:0; font-family:"閺傝顒滈崗棰佹兜姒涙叡GBK"; font-size:14px; text-align:center; line-height:50px; background:#FFFFFF;}
+
+.wold_content_l .content_l_show2 {padding:14px; border:solid 1px #dddddd; background:#FFFFFF;}
+.wold_more_bg {height:46px;line-height: 42px; border-top:solid 2px #c3c6c8; background:#FFFFFF;}
+.wold_more_bg a {display:block; width:732px; height: 100%; margin:0 auto;}
+.wold_more_bg .wold_more {width:104px;height: 100%; margin:0 auto; text-align:center;}
+.wold_more_bg .wold_more p { margin:0; padding:0; font-family:"閺傝顒滈崗棰佹兜姒涙叡GBK"; font-size:14px; color:#555555; display: inline-block; margin-left:5px; margin-right:5px;}
+
+.wold_content_r .wold_r_mod1 {width:456px; border:solid 1px #dddddd; background:#FFFFFF; padding-left:50px; padding-right:40px; padding-bottom:40px; margin-bottom:5px;}
+.wold_content_r .wold_r_mod1 p {font-family:"閺傝顒滈崗棰佹兜姒涙叡GBK"; font-size:14px; line-height:25px;}
+.wold_content_r .wold_r_mod1 p span {color:#015ccd;}
+.wold_content_r .wold_r_mod1 #update_day {font-size:20px;}
+.wold_content_r .wold_r_mod1 #mod1_title {font-family:"閺傝顒滈崗棰佹兜姒涙叡GBK"; font-size:14px; line-height:25px; color:#f98307;}
+
+.wold_content_r .wold_r_mod1 ul li {display:block; width:62px; height:25px; text-align:center; font-family:"閺傝顒滈崗棰佹兜姒涙叡GBK"; font-size:14px; line-height:25px; color:#FFFFFF; background:url(../images/myworld/images/wold_r_mod1_dec1.png) no-repeat; float:left; margin-right:10px; margin-top:10px;}
+.wold_content_r .wold_r_mod1 #item_add {width:62px; height:25px; border:none; cursor:hand; background:url(../images/wold_r_mod1_dec2.png) no-repeat; margin-top:10px;}
+
+.wold_content_r .wold_r_mod2 {width:456px; border:solid 1px #dddddd; background:#FFFFFF; margin-bottom:5px; padding-bottom:50px;}
+.wold_content_r .wold_r_mod2 #wold_mod2_title { margin:0; display:block; width:165px; height:43px; font-family:"閺傝顒滈崗棰佹兜姒涙叡GBK"; font-size:14px; color:#8c4600; line-height:43px; text-align:center; background:#ffcc99; margin-top:5px; margin-bottom:10px;}
+
+.wold_content_r .wold_r_mod2 .wold_r_game a {display:block; width:431px; height:144px; text-decoration:none; color:#000000; padding-top:5px; font-family:"閺傝顒滈崗棰佹兜姒涙叡GBK"; font-size:14px; line-height:25px; margin-left:15px; margin-right:10px; border-bottom:solid 1px #cccccc;}
+.wold_content_r .wold_r_mod2 .wold_r_game a img {float:left; margin-right:10px; border:solid 1px #cccccc;}
+
+
+
+/*娑撳銆�*/
+#wold_pub {width:730px; height:70px; border:none; font-family:"閺傝顒滅涵顒傜應鐞涘奔鍔熺粻锟芥担锟�"; font-size:14px; overflow:hidden; resize:none; outline:none; color:#ff9326; font-weight:bold; line-height:25px;}
+#wold_pub::-webkit-input-placeholder{color: #ff9326!important; font-family: "閺傝顒滅涵顒傜應鐞涘奔鍔熺粻锟芥担锟�"; font-weight: bold;}
+#wold_pub:-moz-placeholder{color: #ff9326!important; font-family: "閺傝顒滅涵顒傜應鐞涘奔鍔熺粻锟芥担锟�"; font-weight: bold;}
+#wold_pub::-moz-placeholder{color: #ff9326!important; font-family: "閺傝顒滅涵顒傜應鐞涘奔鍔熺粻锟芥担锟�"; font-weight: bold;}
+#wold_pub:-ms-input-placeholder{color: #ff9326!important; font-family: "閺傝顒滅涵顒傜應鐞涘奔鍔熺粻锟芥担锟�"; font-weight: bold;}
+.pub_bottom {height:40px; background:#FFFFFF; padding:5px 5px 5px 14px; border-bottom:solid 1px #dddddd;}
+.pub_bottom .pub_fun{height:100%; line-height: 20px; overflow: hidden;}
+.pub_bottom img {margin-right:5px; vertical-align: middle;}
+.pub_bottom p { margin:0;display: inline-block;}
+.pub_bottom a {display: inline-block; vertical-align: middle; margin-right: 8px; text-decoration:none; color:#000000; font-family:"閺傝顒滈崗棰佹兜姒涙叡GBK"; font-size:14px;}
+#wold_pub_class {border:none; width: 75px; overflow:hidden; outline:none; appearance:none; -moz-appearance: none;  -webkit-appearance:none; font-family:"閺傝顒滈崗棰佹兜姒涙叡GBK"; font-size:14px; height:16px; background:url(../images/myworld/images/wold_pub_select.png) right top no-repeat;}
+#pub_key {width:110px; height: 100%; border:none; outline:none; background:#ff9225; font-family:"閺傝顒滈崗棰佹兜姒涙叡GBK"; font-size:14px; color:#FFFFFF; text-align:center; float:right;}
+#sele1_key,#sele2_key {width:110px; height: 100%; border:none; outline:none; background:#ff9225; font-family:"閺傝顒滈崗棰佹兜姒涙叡GBK"; font-size:14px; color:#FFFFFF; text-align:center; float:right;}
+.wold_pub1 {height:53px; padding-left:14px; border-top:solid 1px #cccccc;}
+#wold_pub1_text {width:550px; height:50px; border:none; overflow:hidden; outline:none; resize:none; margin:0; float:left; font-family:"閺傝顒滈崗棰佹兜姒涙叡GBK"; font-size:14px; line-height:25px; color:#777777;}
+#wold_pub1_face {width:60px; height:50px; border:none; outline:none; background:url(../images/myworld/images/mm2_face.png) no-repeat; float:left; margin:0;}
+#wold_pub1_key {width:130px; height:50px; border:none; border-left:solid 1px #dddddd; outline:none; background:#FFFFFF; color:#ff5b26; float:left; margin:0; text-align:center; font-family:"閺傝顒滈崗棰佹兜姒涙叡GBK"; font-size:14px;}
+
+.wlc_show:first-of-type{ margin-top:5px!important;}
+.wlc_show {background:#FFFFFF; margin-top:10px; border:solid 1px #dddddd;}
+.wlc_show .content_l_show3 {padding:14px; background:#FFFFFF;}
+
+.wold_r_mod3 {width:458px; height:140px; background:#FFFFFF; margin-bottom:5px;}
+.wold_r_mod3 ul li {display:block; width:152px; height:70px; font-family:"閺傝顒滈崗棰佹兜姒涙叡GBK"; font-size:14px; text-align:center; line-height:35px; float:left; margin-top:40px;cursor: auto;}
+.wold_r_mod3 ul li a {text-decoration:none; color:#ff5c26; font-family:"閺傝顒滈崗棰佹兜姒涙叡GBK"; font-size:18px; font-weight:bold;}
+.wold_r_mod3 ul li a:hover,.wold_r_mod3 ul li span:hover{text-decoration:underline;cursor: pointer;}
+#mod3_border {border-left:solid 1px #dddddd; border-right:solid 1px #dddddd;}
+.wold_r_mod4 {width:458px; background:#FFFFFF;}
+.mod4_title1 {width:438px; height:50px; margin:0 auto; text-align:center; font-family:"閺傝顒滈崗棰佹兜姒涙叡GBK"; font-size:18px; font-weight:bold; line-height:50px; border-bottom:solid 1px #dddddd;}
+.mod4_title2 {width:80px; height:36px; background:#dddddd; text-align:center; font-family:"閺傝顒滈崗棰佹兜姒涙叡GBK"; font-size:14px; line-height:36px; margin:10px 0 10px 0;}
+.mod4_content {width:438px; margin:0 auto; border-top:solid 1px #dddddd; padding-top:12px; border-bottom:solid 1px #dddddd;}
+.mod4_content .mod4_rank span {font-family:"閺傝顒滅划妤佹た閹板繒鐣濇担锟�"; font-size:20px; color:#ff5c26; line-height:92px; display:block; width:20px; float:left; text-align:center;}
+.mod4_content .mod4_rank {height:92px; padding-bottom:30px;}
+.mod4_content .mod4_rank img { -moz-border-radius: 50%;-webkit-border-radius: 50%;-o-border-radius: 50%;-ms-border-radius: 50%;border-radius:50%; border:solid 3px #ff9326; float:left; margin-left:20px;}
+.mod4_content .mod4_rank #att_key {width:116px; height:45px; font-family:"閺傝顒滈崗棰佹兜姒涙叡GBK"; font-size:14px; color:#ff5c26; text-align:center;  -moz-border-radius: 45%;-webkit-border-radius: 45%;-o-border-radius: 45%;-ms-border-radius: 45%;border-radius:45px; border:solid 1px #ff5c26; background:#FFFFFF; float:left; margin-top:22.5px; margin-left:156px; outline:none;cursor: pointer;}
+
+.wold_pub_t1 {height:36px; font-family:"閺傝顒滈崗棰佹兜姒涙叡GBK"; font-size:14px; line-height:25px; background:#ededed; padding-left:20px; border-top:solid 1px #dddddd;padding: 5px 5px 5px 14px;display: none;}
+.wold_pub_t1 span {color:#ff5c26; margin:0 5px 0 5px;}
+.pub_bottom2 {height:40px; border-bottom:solid 1px #dddddd; background:#FFFFFF; padding:5px 5px 5px 14px;}
+.pub_bottom2 .pub_fun{height:100%; line-height: 20px; overflow: hidden;}
+.pub_bottom2 img {margin-right:5px; vertical-align: middle;}
+.pub_bottom2 p { margin:0;display: inline-block;}
+.pub_bottom2 a {display: inline-block; vertical-align: middle; margin-right: 8px; text-decoration:none; color:#000000; font-family:"閺傝顒滈崗棰佹兜姒涙叡GBK"; font-size:14px;}
+.wold_show_address {height: 40px; line-height:30px; background: #FFFFFF;padding: 5px 5px 5px 14px;display: none;}
+.wold_pub_no {background:#FFFFFF; min-height: 50px; line-height: 30px; padding:10px 8px;display:none;}
+.no_user {width:106px; height: 30px; float:left;  -moz-border-radius: 45%;-webkit-border-radius: 45%;-o-border-radius: 45%;-ms-border-radius: 45%;border-radius:45px; background:#bedeff; text-align:center; font-family:"閺傝顒滈崗棰佹兜姒涙叡GBK"; font-size:14px; margin-right:10px;}
+.no_user span{display: inline-block;width: 70px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;vertical-align: middle;}
+.no_user a {display: inline-block; width:12px; height:12px; margin-left: 8px;vertical-align: middle;}
+.no_user img {display:block;}
+.wold_add_pic {padding:5px 10px 10px 10px; background:#FFFFFF;overflow: hidden;display:none;}
+.wold_add_pic .add_pic,.wold_add_pic .add_pic_icon {width:142px; height:142px; float:left; margin-left:5px; margin-top:5px; border:solid 1px #cccccc; position: relative;display: flex;align-items: center;justify-content: center;}
+.add_pic .del-pic{position: absolute;top: 0;right: 0;}
+.wold_add_pic .add_pic img,.wold_add_pic .add_pic_icon img{ max-width: 100% !important;max-height: 100% !important;}
+
+
+/*閸欐垼銆�*/
+.wold_pub_show {background:#FFFFFF; margin-top:5px; padding:10px 10px 0 10px;}
+.wold_pub_show_bg {background:url(../images/myworld/images/p_line.png) repeat-y;}
+.wold_pub_show .pub_show {margin-top:20px;}
+.wold_pub_show .pub_show .pub_date {width:65px; float:left; margin-right:10px;}
+.wold_pub_show .pub_show .pub_content {width:665px; float:right;}
+.p_date {width:65px; height:66px; background:#ffb973; text-align:center;}
+.p_date #p_date1 {line-height:66px; font-family:"閺傝顒滈崗棰佹兜姒涙叡GBK"; font-size:18px; color:#FFFFFF;}
+.p_date2 {width:65px; height:66px; background:url(../images/myworld/images/wold_pub_dec1.png) no-repeat; text-align:center;}
+.p_date2 #p_date1 {line-height:34px; font-family:"閺傝顒滈崗棰佹兜姒涙叡GBK"; font-size:20px; color:#FFFFFF; font-weight:bold;}
+.p_date2 #p_date2 {line-height:30px; font-family:"閺傝顒滈崗棰佹兜姒涙叡GBK"; font-size:18px; color:#FFFFFF;}
+.p_line {width:52px; height:2px; margin:0 auto; background:#FFFFFF;}
+.p_text {font-family:"閺傝顒滈崗棰佹兜姒涙叡GBK"; font-size:14px; line-height:25px; margin-top:20px; margin-bottom:10px; width:662px;word-wrap:break-word;}
+.p_img {padding-bottom:10px;}
+.p_img img {margin-bottom:5px; float:left; margin-right:3px;}
+.pub_show_bottom {width:100%; margin:0 auto; padding-top:50px; background: #FFFFFF;display: none;}
+.pub_show_bottom span {display:block; width:100px;font-family:"閺傝顒滈崗棰佹兜姒涙叡GBK"; font-size:14px; font-weight:bold; color:#777777; line-height:30px; margin:0 auto;}
+
+
+.wold_r_mod5 {height:391px; background:#FFFFFF; margin-bottom:20px;}
+.wold_r_mod5 .mod5_dec {width:458px; height:391px; background:url(../images/myworld/images/wold_r_dec1.png) no-repeat; padding:0 8px 20px 3px;}
+.wold_r_mod5 .mod5_dec span { display:block; width:440px; line-height:40px; font-family:"閺傝顒滈崗棰佹兜姒涙叡GBK"; font-size:16px; margin-left:15px;}
+.wold_r_mod5 .mod5_dec img {display:block; float:left; margin:0 0 5px 5px;}
+
+.wold_r_mod6 {height:882px; background:#FFFFFF; margin-bottom:20px;}
+.wold_r_mod6 .mod6_dec {width:458px; height:882px; background:url(../images/myworld/images/wold_r_dec2.png) no-repeat; padding:0 14px 14px 14px;}
+.wold_r_mod6 .mod6_dec span { display:block; width:440px; line-height:40px; font-family:"閺傝顒滈崗棰佹兜姒涙叡GBK"; font-size:16px; margin-left:15px;}
+.wold_r_mod6 .mod6_dec img {display:block; float:left; margin-bottom:10px;}
+
+
+/*鐡掑疇鎶�*/
+.foot_all {width:1055px; margin:0 auto; margin-top:55px;}
+.foot_all .f_dec {width:718px;}
+.foot_all .l_dec {width:715px; float:right;}
+.foot_all .f_dec img {display:block; float:right;}
+.foot_all .l_dec img {display:block; float:left;}
+
+.foot_show1 {width:1055px; margin:0 auto;}
+.foot_show1 .f_content { width:628px; height:199px; background:url(../images/myworld/images/footprint_bg1.png) no-repeat; float:left;}
+.foot_show1 .f_content p {display:block; height:61px; line-height:61px; color:#FFFFFF;font-family:"閺傝顒滈崗棰佹兜姒涙叡GBK"; font-size:14px; float:right; margin-top:69px; margin-right:30px;}
+.foot_show1 .f_content span {display:block; height:61px; line-height:61px; color:#FFFFFF;font-family:"閺傝顒滈崗棰佹兜姒涙叡GBK"; font-size:20px; font-weight:bold; float:right; margin-top:69px; margin-right:52px;}
+.foot_show1 .f_content .f_line2 {width:3px; height:61px; margin-top:69px; margin-right:30px; background:#FFFFFF; float:right;}
+.foot_show1 .f_line {width:26px; height:199px; margin-left:64px; float:left; background:#ff9326;}
+.foot_show1 .f_year {width:150px; height:107px; margin-top:46px; float:left; margin-left:64px; text-align:center; background:url(../images/myworld/images/footprint_bg2.png) no-repeat;}
+.foot_show1 .f_year span {color:#FFFFFF;font-family:"閺傝顒滈崗棰佹兜姒涙叡GBK"; font-size:20px; font-weight:bold; line-height:107px;}
+
+.foot_show2 {width:1055px; margin:0 auto;}
+.foot_show2 .f_content { width:628px; height:199px; background:url(../images/myworld/images/footprint_bg3.png) no-repeat; float:right;}
+.foot_show2 .f_content p {display:block; height:61px; line-height:61px; color:#FFFFFF;font-family:"閺傝顒滈崗棰佹兜姒涙叡GBK"; font-size:14px; float:left; margin-top:69px; margin-left:30px;}
+.foot_show2 .f_content span {display:block; height:61px; line-height:61px; color:#FFFFFF;font-family:"閺傝顒滈崗棰佹兜姒涙叡GBK"; font-size:20px; font-weight:bold; float:left; margin-top:69px; margin-left:52px;}
+.foot_show2 .f_content .f_line2 {width:3px; height:61px; margin-top:69px; margin-left:30px; background:#FFFFFF; float:left;}
+.foot_show2 .f_line {width:26px; height:199px; margin-right:61px; float:right; background:#ff9326;}
+.foot_show2 .f_year {width:150px; height:107px; margin-top:46px; float:right; margin-right:64px; text-align:center; background:url(../images/myworld/images/footprint_bg4.png) no-repeat;}
+.foot_show2 .f_year span {color:#FFFFFF;font-family:"閺傝顒滈崗棰佹兜姒涙叡GBK"; font-size:20px; font-weight:bold; line-height:107px;}
+
+.foot_all .foot_dec1 {width:718px;}
+.foot_all .foot_dec1 img {display:block; float:right;}
+.foot_all .foot_dec2 {width:715px; float:right;}
+.foot_all .foot_dec2 img {display:block; float:left;}
+.show_input{display:block!important}
+
+.fans_box{width:90%;margin:0 auto;background: #fff;padding: 10px 10px 30px 10px;}
+.fans_seek label {position: relative;cursor: pointer;}
+.fans_seek input{cursor: pointer;}
+.fans_seek input:checked + .show-box:before {content: '';position: absolute;top: 2px;left: 6px;width: 3px;height: 8px; border: 1px solid rgb(0,0,0);border-width: 0 2px 2px 0; transform: rotate(45deg); }
+.fans_seek .show-box {box-sizing: content-box;position: absolute;top: 0;left: 0;width: 16px;height: 16px;border-radius: 2px;border: 1px solid #d8d8d8;background: white; }
+.fans_count{padding-bottom: 20px;}
+.fans_seek{height: 40px;}
+/* .fans_list{overflow: hidden;} */
+.fans_seek .checkbox{float:left;}
+.fans_rank {width: 55px; display: inline-block; position: relative;}
+.drop_down {display: inline-block;margin-left: 5px;margin-bottom: 3px;width: 0;height: 0;border-top: solid 6px #646464;border-right: solid 4px transparent;border-left: solid 4px transparent;vertical-align: middle;}
+.fans_rank ul{position: absolute;display: none;z-index: 9999;width: 150px;background: #dadada;border: 1px solid #ccc;margin-top: 10px;padding-top: 4px;}
+.fans_rank ul li{height:50px;line-height:50px;border-top: 1px solid #ccc;text-indent: 0.4em;border-top: 1px solid #ccc;background: #fff;}
+.fans_seek_box{float: right;width: 300px;height: 30px;border-radius: 4px;border: 1px solid #ccc;}
+.fans_seek_box input{border: none;background: none;width: 90%;height: 100%;text-indent: 0.7em;float: left;}
+.fans_seek_box .fans_seek_submit{width: 10%; height: 100%;line-height: 35px;float: left;cursor: pointer;display: flex;align-items: center;justify-content: center;}
+.fans_seek_box .fans_seek_submit img{width:20px;}
+.fans_tion{border:1px solid #ccc;width: 62px;text-align: center;border-radius: 3px;position: relative;cursor: pointer;}
+.fans_tion ul{position: absolute;display: none;z-index: 9999;width: 120px;background: #fff;border: 1px solid #ccc;}
+.fans_tion ul li{height: 30px;line-height: 30px;border-top: 1px solid #eee;}
+.fans_index{width:19%;height: 90px;background-color: #efefef;display: flex;align-items: center;position: relative;float: left;margin: 5px;}
+.fans_check{background-image: url(../images/myworld/images/wold_support4.png);background-position: right top;background-repeat: no-repeat;}
+.fans_check2{background-image: url(../images/myworld/images/wold_support3.png);background-position: right top;background-repeat: no-repeat;}
+.fans_data{text-align: center;}
+.fans_index .fans_img{width:50px;height: 50px;border: 1.7px solid #949494;border-radius: 100%;margin: 0 20px;display: flex;align-items: center;justify-content: center;}
+.fans_index .fans_img img{width: 40px;height: 40px;border-radius: 50%;}
+.dark_bg {display: none;background-color: rgba(0, 0, 0, .4);position: fixed;top: 0;left: 0;z-index: 100;width: 100%;height: 100%;}
+.remark_name {background-color: #FFF;position: fixed;width: 300px;height: 150px;left: 50%;margin-left: -150px;top: 50%;margin-top: -75px;}
+.remark_name_tit{height:45px;line-height: 45px;text-align: center;border-bottom: 1px solid #ccc;}
+.remark_box{height: calc(100% - 45px);}
+.remark_int{padding: 15px 6px 7px 7px;text-align: center;}
+.remark_int input{width: 95%;height:30px;text-indent: 0.5em;}
+.remark_conf{text-align: center;}
+.remark_conf span{display: inline-block;width: 45%;height: 30px;line-height: 30px;background: #ff9326;border-radius: 2px;}
+

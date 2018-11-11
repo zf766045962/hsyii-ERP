@@ -33,8 +33,9 @@
                         </td>
                         <td><?php echo $form->labelEx($model, 'customer_name'); ?></td>
                         <td><!--区域选择弹窗未显示-->
-                            <?php echo $form->textField($model, 'customer_name', array('class' => 'input-text')); ?>
-                            <?php echo $form->error($model, 'customer_name', $htmlOptions = array()); ?>
+                            <?php echo $form->hiddenField($model, 'customer_name', array('class' => 'input-text')); ?>
+                            <span id="price_box"><?php if($model->customer_name!=null){?><span class="label-box"><?php echo $model->customer_name;?></span><?php } ?></span>
+                            <input id="downproduct_select_btn" class="btn" type="button" value="选择">
                         </td>
                     </tr>
                     <tr>
@@ -44,7 +45,8 @@
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="4"><?php echo $form->dropDownList($model, 'remarks', Chtml::listData($model, 'id', 'order_title')
+                        <td><?php echo "测试下拉框："; ?>
+                        <td colspan="3"><?php echo $form->dropDownList($model, 'remarks', Chtml::listData(tradeOrder::model()->findAll(), 'id', 'auditor')
                             , array('prompt'=>'请选择','onchange' =>'selectOnchang(this)'));?>
                         </td>
                     </tr>
@@ -119,7 +121,7 @@
     };
 
     $('#downproduct_select_btn').on('click', function(){
-        $.dialog.data('club_id', 0);
+        $.dialog.data('customer_name', 0);
         $.dialog.open('<?php echo $this->createUrl("select/club", array('if_del'=>510));?>',{
             id:'danwei',
             lock:true,
@@ -128,9 +130,9 @@
             width:'500px',
             height:'60%',
             close: function () {
-                if($.dialog.data('club_id')>0){
-                    $('#MallLowerSet_supplier_id').val($.dialog.data('club_id'));
-                    $('#price_box').html('<span class="label-box">'+$.dialog.data('club_title')+'</span>');
+                if($.dialog.data('customer_name')>0){
+                    $('#TradeOrder_customer_name').val($.dialog.data('customer_name'));
+                    $('#price_box').html('<span class="label-box">'+$.dialog.data('customer_name')+'</span>');
                 }
             }
         });
@@ -145,50 +147,6 @@
         //     return false;
         // }
         $.dialog.data('id', 0);
-        $.dialog.open('<?php echo $this->createUrl("tradeDetail/update");?>&mall_member_price_id='+supplier_id,{
-            id:'xiajia',
-            lock:true,
-            opacity:0.3,
-            title:'选择下架商品',
-            width:'900px',
-            height:'70%',
-            close: function() {
-                if($.dialog.data('id')==-1){
-                    var boxnum=$.dialog.data('title');
-                    for(var j=0;j<boxnum.length;j++) {
-                        // num=num+1;
-                        if($('#low_item_'+boxnum[j].dataset.code).length==0){
-                            var as=boxnum[j].dataset.inventory-boxnum[j].dataset.available;
-                            $product.append(
-                                '<tr style="text-align:center;" id="low_item_'+boxnum[j].dataset.code+'">'+
-                                    '<td>'+boxnum[j].dataset.code+
-                                        '<input type="hidden" class="input-text" name="product['+num+'][id_null]" value="null">'+
-                                        '<input type="hidden" class="input-text" name="product['+num+'][code]" value="'+boxnum[j].dataset.code+'">'+
-                                        '<input type="hidden" class="input-text" name="product['+num+'][title]" value="'+boxnum[j].dataset.title+'">'+
-                                        '<input type="hidden" class="input-text" name="product['+num+'][productid]" value="'+boxnum[j].dataset.productid+'">'+
-                                        '<input type="hidden" class="input-text" name="product['+num+'][detailsid]" value="'+boxnum[j].dataset.detailsid+'">'+
-                                        '<input type="hidden" class="input-text" name="product['+num+'][json_attr]" value="'+boxnum[j].dataset.attr+'">'+
-                                        '<input type="hidden" class="input-text" name="product['+num+'][pricing_type]" value="'+boxnum[j].dataset.pricingtype+'">'+
-                                        '<input type="hidden" class="input-text" name="product['+num+'][upquantity]" value="'+boxnum[j].dataset.upquantity+'">'+
-                                        '<input type="hidden" class="input-text" name="product['+num+'][supplier_id]" value="'+boxnum[j].dataset.supplierid+'">'+
-                                        '<input type="hidden" class="input-text" name="product['+num+'][supplier_name]" value="'+boxnum[j].dataset.supplier+'">'+
-                                        '<input type="hidden" class="input-text" name="product['+num+'][down_pricing_id]" value="'+boxnum[j].dataset.downpricingid+'">'+
-                                        '<input type="hidden" class="input-text" name="product['+num+'][down_pricing_set_details_id]" value="'+boxnum[j].dataset.downpricingsetdetailsid+'">'+
-                                        '<input type="hidden" class="input-text" name="product['+num+'][down_pricing_set_id]" value="'+boxnum[j].dataset.downpricingsetid+'">'+
-                                    '</td>'+
-                                    '<td>'+boxnum[j].dataset.title+'</td>'+
-                                    '<td>'+boxnum[j].dataset.attr+'</td>'+
-                                    '<td>'+boxnum[j].dataset.supplier+'<input type="hidden" value="'+boxnum[j].dataset.supplierid+'"></td>'+
-                                    '<td>'+boxnum[j].dataset.upquantity+'</td>'+
-                                    '<td><input class="input-text" name="product['+num+'][inventory_quantity]" value="'+as+'"></td>'+
-                                    '<td><a class="btn" href="javascript:;" onclick="fnDeleteProduct(this);" title="删除"><i class="fa fa-trash-o"></i></a></td>'+
-                                '</tr>'
-                            );
-                            num++;
-                        }
-                    }
-                }
-            }
-        });
+        $.dialog.open('<?php echo $this->createUrl("create");?>')    
     })
 </script>

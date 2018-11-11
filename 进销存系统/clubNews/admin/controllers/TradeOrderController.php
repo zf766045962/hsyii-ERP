@@ -20,7 +20,8 @@ class TradeOrderController extends BaseController {
         $model = new $modelName('create');
         $data = array();
         if (!Yii::app()->request->isPostRequest) {
-            //$model->order_num = date('ymd').substr(microtime(),2,4);
+            $sn = $this->getOrderId();
+            $model->order_num = $sn;
             $data['model'] = $model;
             $this->render('update', $data);
         }else{
@@ -41,19 +42,32 @@ class TradeOrderController extends BaseController {
         }
     }/*曾老师保留部份，---结束*/
   
- function saveData($model,$post) {
+    function saveData($model,$post) {
        $model->attributes =$post;
        show_status($model->save(),'保存成功', get_cookie('_currentUrl_'),'保存失败');  
- }
+    }
+
+
+    function getOrderID(){
+        static $ORDERSN=array();                                        //静态变量
+        $ors=date('ymd').substr(time(),-5).substr(microtime(),2,5);     //生成16位数字基本号
+        if (isset($ORDERSN[$ors])) {                                    //判断是否有基本订单号
+            $ORDERSN[$ors]++;                                           //如果存在,将值自增1
+        }else{
+            $ORDERSN[$ors]=1;
+        }
+        return $ors.str_pad($ORDERSN[$ors],2,'0',STR_PAD_LEFT);     //链接字符串
+    }
 
     ///列表搜索
-     public function actionIndex( $keywords = '') {
+     public function actionIndex( $keywords = 'DD') {
         set_cookie('_currentUrl_', Yii::app()->request->url);
         $modelName = $this->model;
         $model = $modelName::model();
         $criteria = new CDbCriteria;
         $criteria->order = 'id';
         $data = array();
+        //$data['remarks'] = TradeDetail::model();
         parent::_list($model, $criteria, 'index', $data);
     }
 
