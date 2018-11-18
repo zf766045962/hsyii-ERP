@@ -24,6 +24,7 @@ public function actionStudentchose() {
     // $no_cooperation 单位id，非此单位的联盟单位
     public function actionClub($keywords = '', $partnership_type = 0, $project_id = 0, $no_cooperation = 0,$club_type = '') {
        
+       //渲染select文件夹下的club视图
         $this->show_club($keywords, $partnership_type, $project_id, $no_cooperation,$club_type,'club');
     }
 
@@ -37,7 +38,9 @@ public function actionStudentchose() {
         $model = ClubList::model();
         $criteria = new CDbCriteria;
         $criteria->condition = 'if_del=510';
+
         $criteria->select = 'id select_id,club_name select_title,club_code select_code';
+
         if ($keywords != '') {
             $criteria->condition .= ' AND (club_name like "%' . $keywords . '%" OR club_code like "%' . $keywords . '%")';
         }

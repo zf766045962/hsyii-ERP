@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50505
 File Encoding         : 65001
 
-Date: 2018-11-06 23:19:02
+Date: 2018-11-18 20:59:20
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -31,10 +31,10 @@ CREATE TABLE `trade_detail` (
   `remarks` varchar(50) DEFAULT NULL,
   `order_num` char(10) DEFAULT NULL,
   PRIMARY KEY (`id`),
-  KEY `link` (`order_num`),
-  CONSTRAINT `link` FOREIGN KEY (`order_num`) REFERENCES `trade_order` (`order_num`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  KEY `link` (`order_num`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of trade_detail
 -- ----------------------------
+INSERT INTO `trade_detail` VALUES ('1', '2442', '啊', '20', '斤', '5.00', '100.00', '30', null, '1811036498');
