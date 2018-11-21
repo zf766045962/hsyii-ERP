@@ -45,7 +45,7 @@
                         <td colspan="2">联系人信息</td>
                     </tr>
                     <tr>
-                        <td  width="15%"><?php echo $form->labelEx($model, 'apply_name'); ?></td>
+                        <td width="15%"><?php echo $form->labelEx($model, 'apply_name'); ?></td>
                         <td width="85%">
                             <?php echo $form->textField($model, 'apply_name', array('class' => 'input-text')); ?>
                             <?php echo $form->error($model, 'apply_name', $htmlOptions = array()); ?>

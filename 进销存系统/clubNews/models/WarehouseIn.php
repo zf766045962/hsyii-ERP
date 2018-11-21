@@ -1,6 +1,6 @@
 <?php
 
-class TradeOrder extends BaseModel {
+class WarehouseIn extends BaseModel {
 	public $club_list_pic='';
     public function tableName() {
         return '{{trade_order}}';
@@ -21,7 +21,7 @@ class TradeOrder extends BaseModel {
             //array('email', 'required', 'message' => '{attribute} 不能为空'),
 		    //array('contact_id_card_back', 'required', 'message' => '{attribute} 不能为空'),
 			//array('club_address', 'required', 'message' => '{attribute} 不能为空'),
-			array('id,order_title,order_num,order_time,customer_name,receiver,auditor,remarks','safe',), 
+			array('id,order_title,order_num,order_time,customer_name,receiver,auditor,remarks,order_type','safe',), 
 			//array($s1,'safe'),
 		);
     }
@@ -48,6 +48,7 @@ class TradeOrder extends BaseModel {
         	'receiver' => '收货人',
         	'auditor' => '审核人',
             'remarks' => '备注',
+            'order_type' => '订单类型',
      );
     }
 
@@ -68,11 +69,12 @@ class TradeOrder extends BaseModel {
         parent::beforeSave();
         //执行save()方法前才对order_num赋值
         //期望效果：创建订单时自动生成对应order_num
-        if(empty($this->order_num))
-        {
-            $order_sn = date('ymd').substr(microtime(),2,4);
-            $this->order_num = $order_sn;            
-        }
+        // if(empty($this->order_num))
+        // {
+        //     $order_sn = date('ymd').substr(microtime(),2,4);
+        //     $this->order_num = $order_sn;            
+        // }
+        $this->order_type = 0;
         return true;
     }
 }

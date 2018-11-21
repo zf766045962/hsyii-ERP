@@ -44,12 +44,6 @@
                             <?php echo $form->textArea($model,'remarks', array('class' => 'input-text', 'maxlength'=>'30' )); ?>
                         </td>
                     </tr>
-                    <tr>
-                        <td><?php echo "测试下拉框："; ?>
-                        <td colspan="3"><?php echo $form->dropDownList($model, 'remarks', Chtml::listData(tradeOrder::model()->findAll(), 'id', 'auditor')
-                            , array('prompt'=>'请选择','onchange' =>'selectOnchang(this)'));?>
-                        </td>
-                    </tr>
                 </table>
                 <script>var oldnum=0;</script>               
                 <table class="mt15" id="product">
@@ -122,17 +116,18 @@
 
     $('#downproduct_select_btn').on('click', function(){
         $.dialog.data('customer_name', 0);
-        $.dialog.open('<?php echo $this->createUrl("select/club", array('if_del'=>510));?>',{
-            id:'danwei',
+        $.dialog.open('<?php echo $this->createUrl("select/customer", array('if_del'=>510));?>',{
+            id:'cSu',
             lock:true,
             opacity:0.3,
             title:'选择具体内容',
             width:'500px',
             height:'60%',
             close: function () {
-                if($.dialog.data('customer_name')>0){
-                    $('#TradeOrder_customer_name').val($.dialog.data('customer_name'));
-                    $('#price_box').html('<span class="label-box">'+$.dialog.data('customer_name')+'</span>');
+                if($.dialog.data('s_id')>0){
+                    //TradeOrder表的customer_name属性下保存s_name数据
+                    $('#WarehouseOut_customer_name').val($.dialog.data('s_name'));
+                    $('#price_box').html('<span class="label-box">'+$.dialog.data('s_name')+'</span>');
                 }
             }
         });
@@ -147,6 +142,13 @@
         //     return false;
         // }
         $.dialog.data('id', 0);
-        $.dialog.open('<?php echo $this->createUrl("create");?>')    
+        $.dialog.open('<?php echo $this->createUrl("tradeDetail/create");?>',{
+                        id:'danwei',
+            lock:true,
+            opacity:0.3,
+            title:'选择具体内容',
+            width:'500px',
+            height:'60%',
+        })    
     })
 </script>

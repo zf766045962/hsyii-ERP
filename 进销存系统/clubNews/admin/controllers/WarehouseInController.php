@@ -1,6 +1,6 @@
 <?php
  
-class TradeOrderController extends BaseController {
+class WarehouseInController extends BaseController {
 
     protected $model = '';
 
@@ -20,7 +20,8 @@ class TradeOrderController extends BaseController {
         $model = new $modelName('create');
         $data = array();
         if (!Yii::app()->request->isPostRequest) {
-            $sn = $this->getOrderId();
+            //$sn = $this->getOrderId();
+            $sn = date('ymd').substr(microtime(),2,4);
             $model->order_num = $sn;
             $data['model'] = $model;
             $this->render('update', $data);
@@ -60,14 +61,20 @@ class TradeOrderController extends BaseController {
     }
 
     ///列表搜索
-     public function actionIndex( $keywords = 'DD') {
+     public function actionIndex( $keywords = '') {
         set_cookie('_currentUrl_', Yii::app()->request->url);
         $modelName = $this->model;
         $model = $modelName::model();
         $criteria = new CDbCriteria;
         $criteria->order = 'id';
+        $criteria->condition = 'order_type=0';
         $data = array();
         //$data['remarks'] = TradeDetail::model();
+
+        if ($keywords != '') {
+            $criteria->condition .= ' AND(order_title like "%' . $keywords . '%" OR order_num like "%' . $keywords . '%")';
+        }
+
         parent::_list($model, $criteria, 'index', $data);
     }
 

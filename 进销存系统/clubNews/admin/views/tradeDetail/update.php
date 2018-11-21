@@ -48,7 +48,7 @@
                     </tr>
                     <tr>
                         <td><?php echo $form->labelEx($model, 'warehouse_id');?>;</td>
-                        <td colspan="3"><?php echo $form->dropDownList($model, 'remarks', Chtml::listData(tradeOrder::model()->findAll(), 'id', 'auditor')
+                        <td colspan="3"><?php echo $form->dropDownList($model, 'remarks', Chtml::listData(SupplierList::model()->findAll(), 's_name', 's_name')
                             , array('prompt'=>'请选择','onchange' =>'selectOnchang(this)'));?>
                         </td>
                     <tr>

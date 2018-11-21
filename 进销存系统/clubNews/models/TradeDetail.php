@@ -29,7 +29,7 @@ class TradeDetail extends BaseModel {
      */
     public function relations() {
         return array(
-            'trade_order' => array(self::BELONGS_TO, 'TradeOrder', 'order_num'),
+            // 'trade_order' => array(self::BELONGS_TO, 'TradeOrder', 'order_num'),
 		);
     }
 
