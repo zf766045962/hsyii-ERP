@@ -116,7 +116,7 @@
 
     $('#downproduct_select_btn').on('click', function(){
         $.dialog.data('customer_name', 0);
-        $.dialog.open('<?php echo $this->createUrl("select/supplier", array('if_del'=>510));?>',{
+        $.dialog.open('<?php echo $this->createUrl("select/supplier");?>',{
             id:'cSu',
             lock:true,
             opacity:0.3,
@@ -131,7 +131,7 @@
                 }
             }
         });
-    });
+    }); 
 
     $product=$('#product');
     var num=<?php echo $num; ?>;
@@ -143,11 +143,11 @@
         // }
         $.dialog.data('id', 0);
         $.dialog.open('<?php echo $this->createUrl("tradeDetail/create");?>',{
-                        id:'danwei',
+            id:'danwei',
             lock:true,
             opacity:0.3,
             title:'选择具体内容',
-            width:'500px',
+            width:'700px',
             height:'60%',
         })    
     })

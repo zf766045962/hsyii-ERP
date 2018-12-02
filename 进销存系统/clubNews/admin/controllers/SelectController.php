@@ -7,7 +7,7 @@ class SelectController extends BaseController {
     }
 
     public function actionSupplier($keywords = '', $partnership_type = 0, $project_id = 0, 
-        $no_cooperation = 0, $s_type = 's_type=100') {
+        $no_cooperation = 0, $s_type = "s_type=100") {
 
         //最后一个参数选择渲染页面  
         $this->show_info($keywords, $partnership_type, $project_id, $no_cooperation, $s_type, 'supplier');
@@ -32,6 +32,6 @@ class SelectController extends BaseController {
             $criteria->condition .= ' AND (s_name like "%' . $keywords . '%")';
         }
 
-        parent::_list($model, $criteria, $pfile, $data);
+        parent::_list($model, $criteria, $pfile, $data, 10);
     }
 }

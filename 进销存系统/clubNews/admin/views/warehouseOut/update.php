@@ -116,7 +116,7 @@
 
     $('#downproduct_select_btn').on('click', function(){
         $.dialog.data('customer_name', 0);
-        $.dialog.open('<?php echo $this->createUrl("select/customer", array('if_del'=>510));?>',{
+        $.dialog.open('<?php echo $this->createUrl("select/customer");?>',{
             id:'cSu',
             lock:true,
             opacity:0.3,
